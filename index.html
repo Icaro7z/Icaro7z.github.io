@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Icaro Bruno | Programação</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    #mensagem {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      color: #facc15;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+    }
+  </style>
 </head>
 <body>
-    <h1>site do icaro</h1>
+
+  <header>
+    <h1>Icaro Bruno</h1>
+    <p>Futuro desenvolvedor de tecnologia e inovação</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Sobre</h2>
+      <p>
+        Icaro Bruno é um estudante dedicado que busca evoluir constantemente no mundo da programação,
+        aprendendo novas tecnologias e desenvolvendo projetos criativos.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Objetivos na Programação</h2>
+      <ul>
+        <li>Dominar HTML, CSS e JavaScript</li>
+        <li>Aprender frameworks modernos</li>
+        <li>Construir projetos reais para portfólio</li>
+        <li>Conseguir oportunidades na área de tecnologia</li>
+      </ul>
+
+      <button onclick="mostrarMensagem()">Ver Motivação</button>
+      <p id="mensagem"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 - Landing Page de Icaro Bruno</p>
+  </footer>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('mensagem').innerText =
+        'Cada linha de código é um passo mais perto dos seus objetivos!';
+    }
+  </script>
+
 </body>
 </html>
